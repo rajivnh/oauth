@@ -1,0 +1,19 @@
+server:
+  port: 82
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: oauth
+    
+security:
+  oauth2:
+    client:
+      access-token-validity-seconds: 3600
+      
+eureka:
+  client:
+    region: default
+    service-url:
+      defaultZone: http://127.0.0.1:83/eureka
